@@ -8,6 +8,7 @@ sock.bind(("", 0))
 PORT = sock.getsockname()[1]
 sock.close()
 
+# app registers itself to consul
 service_id = uuid.uuid4().hex
 app = Flask(__name__)
 consul = consul.Consul(host="localhost", port="8500")
