@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   consul:
-    image: consul:latest
+    image: consul:1.9.7
     container_name: consul-server
     ports:
       - "8500:8500"  # UI and HTTP API
