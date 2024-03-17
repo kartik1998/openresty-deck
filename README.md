@@ -2,6 +2,7 @@
 
 ### Reference:
 - https://www.youtube.com/watch?v=x0yhwXbLJUM
+- https://github.com/ahnaf-zamil/openresty-consul-proxy
 
 #### Mac specific
 
