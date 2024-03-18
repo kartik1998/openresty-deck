@@ -16,4 +16,4 @@ services:
       dockerfile: Dockerfile  
     container_name: openresty-server
     ports:
-      - "9000:9000"  # UI and HTTP API
+      - "9000:80"  # UI and HTTP API
