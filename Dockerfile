@@ -5,8 +5,8 @@ FROM openresty/openresty:alpine
 WORKDIR /usr/local/openresty/nginx/
 
 # Copy the configuration files and directories to the container
-COPY ./scripts/ /usr/local/openresty/scripts/
-COPY ./conf/ /usr/local/openresty/nginx/
+COPY ./scripts/ /usr/local/openresty/nginx/scripts/
+COPY ./conf/ /usr/local/openresty/nginx/conf/
 
 # Expose port 80
 EXPOSE 80
