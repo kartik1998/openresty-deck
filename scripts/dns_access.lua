@@ -1,7 +1,7 @@
 local dns_res = require "resty.dns.resolver"
 
 local query_domain = "flask-app.service.dc1.consul"
-local dns_conf = {"127.0.0.1", 8600}
+local dns_conf = {"host.docker.internal", 8600}
 
 function abort(reason, status_code)
   ngx.status = status_code

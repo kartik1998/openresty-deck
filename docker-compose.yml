@@ -8,3 +8,12 @@ services:
       - "8500:8500"  # UI and HTTP API
       - "8600:8600/udp"  # DNS
     command: "agent -server -bootstrap -ui -client=0.0.0.0"
+  openresty:
+    depends_on:
+      - consul
+    build: 
+      context: .
+      dockerfile: Dockerfile  
+    container_name: openresty-server
+    ports:
+      - "9000:9000"  # UI and HTTP API
